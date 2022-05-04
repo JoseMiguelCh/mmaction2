@@ -97,7 +97,7 @@ data = dict(
         pipeline=test_pipeline))
 
 evaluation = dict(
-    interval=1, metrics=['top_k_accuracy', 'mean_class_accuracy'])
+    interval=1, metrics=['top_k_accuracy', 'mean_class_accuracy'], save_best='auto')
 
 # optimizer
 optimizer = dict(
@@ -121,3 +121,6 @@ total_epochs = 15
 # runtime settings
 checkpoint_config = dict(interval=5)
 work_dir = './work_dirs/timesformer_divST_8x32x1_15e_kinetics400_rgb'
+seed = 0
+set_random_seed(0, deterministic=False)
+gpu_ids = range(1)
