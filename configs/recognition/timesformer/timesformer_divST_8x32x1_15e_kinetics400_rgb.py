@@ -116,11 +116,11 @@ optimizer_config = dict(grad_clip=dict(max_norm=40, norm_type=2))
 
 # learning policy
 lr_config = dict(policy='step', step=[5, 10])
-total_epochs = 15
+total_epochs = 10
 
 # runtime settings
 checkpoint_config = dict(interval=5)
+log_config = dict(interval=5)
 work_dir = './work_dirs/timesformer_divST_8x32x1_15e_kinetics400_rgb'
 seed = 0
-set_random_seed(0, deterministic=False)
 gpu_ids = range(1)
