@@ -22,12 +22,12 @@ model = dict(
     test_cfg=dict(average_clips='prob'))
 
 # dataset settings
-dataset_type = 'RawframeDataset'
-data_root = 'data/kinetics400/rawframes_train'
-data_root_val = 'data/kinetics400/rawframes_val'
-ann_file_train = 'data/kinetics400/kinetics400_train_list_rawframes.txt'
-ann_file_val = 'data/kinetics400/kinetics400_val_list_rawframes.txt'
-ann_file_test = 'data/kinetics400/kinetics400_val_list_rawframes.txt'
+dataset_type = 'VideoDataset'
+data_root = 'kinetics400_tiny/train/'
+data_root_val = 'kinetics400_tiny/val/'
+ann_file_train = 'kinetics400_tiny/kinetics_tiny_train_video.txt'
+ann_file_val = 'kinetics400_tiny/kinetics_tiny_val_video.txt'
+ann_file_test = 'kinetics400_tiny/kinetics_tiny_val_video.txt'
 
 img_norm_cfg = dict(
     mean=[127.5, 127.5, 127.5], std=[127.5, 127.5, 127.5], to_bgr=False)
@@ -102,7 +102,7 @@ evaluation = dict(
 # optimizer
 optimizer = dict(
     type='SGD',
-    lr=0.005,
+    lr=0.005/8,
     momentum=0.9,
     paramwise_cfg=dict(
         custom_keys={
@@ -119,5 +119,5 @@ lr_config = dict(policy='step', step=[5, 10])
 total_epochs = 15
 
 # runtime settings
-checkpoint_config = dict(interval=1)
+checkpoint_config = dict(interval=5)
 work_dir = './work_dirs/timesformer_divST_8x32x1_15e_kinetics400_rgb'
