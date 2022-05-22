@@ -17,12 +17,12 @@
     </sup>
   </div>
 
-  [📘文档](https://mmaction2.readthedocs.io/en/latest/) |
-  [🛠️安装指南](https://mmaction2.readthedocs.io/en/latest/install.html) |
-  [👀模型库](https://mmaction2.readthedocs.io/en/latest/modelzoo.html) |
-  [🆕更新](https://mmaction2.readthedocs.io/en/latest/changelog.html) |
-  [🚀进行中项目](https://github.com/open-mmlab/mmaction2/projects) |
-  [🤔问题反馈](https://github.com/open-mmlab/mmaction2/issues/new/choose)
+[📘文档](https://mmaction2.readthedocs.io/en/latest/) |
+[🛠️安装指南](https://mmaction2.readthedocs.io/en/latest/install.html) |
+[👀模型库](https://mmaction2.readthedocs.io/en/latest/modelzoo.html) |
+[🆕更新](https://mmaction2.readthedocs.io/en/latest/changelog.html) |
+[🚀进行中项目](https://github.com/open-mmlab/mmaction2/projects) |
+[🤔问题反馈](https://github.com/open-mmlab/mmaction2/issues/new/choose)
 
 </div>
 
@@ -78,7 +78,7 @@ MMAction2 是一款基于 PyTorch 的视频理解开源工具箱，是 [OpenMMLa
 - (2021-10-25) 提供使用自定义数据集训练 PoseC3D 的 [教程](https://github.com/open-mmlab/mmaction2/blob/master/configs/skeleton/posec3d/custom_dataset_training.md)，此 PR 由用户 [bit-scientist](https://github.com/bit-scientist) 完成！
 - (2021-10-16) 在 UCF101, HMDB51 上支持 **PoseC3D**，仅用 2D 关键点就可分别达到 87.0% 和 69.3% 的识别准确率。两数据集的预提取骨架特征可以公开下载。
 
-v0.23.0 版本已于 2022 年 4 月 1 日发布，可通过查阅 [更新日志](/docs/changelog.md) 了解更多细节以及发布历史
+v0.24.0 版本已于 2022 年 5 月 5 日发布，可通过查阅 [更新日志](/docs/changelog.md) 了解更多细节以及发布历史
 
 ## 安装
 
@@ -258,9 +258,9 @@ MMAction2 将跟进学界的最新进展，并支持更多算法和框架。如�
 
 目前有许多研究工作或工程项目基于 MMAction2 搭建，例如：
 
-- Evidential Deep Learning for Open Set Action Recognition, ICCV 2021 **Oral**. [[论文]](https://arxiv.org/abs/2107.10161)[[代码]](https://github.com/Cogito2012/DEAR)
-- Rethinking Self-supervised Correspondence Learning: A Video Frame-level Similarity Perspective, ICCV 2021 **Oral**. [[论文]](https://arxiv.org/abs/2103.17263)[[代码]](https://github.com/xvjiarui/VFS)
-- Video Swin Transformer. [[论文]](https://arxiv.org/abs/2106.13230)[[代码]](https://github.com/SwinTransformer/Video-Swin-Transformer)
+- Evidential Deep Learning for Open Set Action Recognition, ICCV 2021 **Oral**. [\[论文\]](https://arxiv.org/abs/2107.10161)[\[代码\]](https://github.com/Cogito2012/DEAR)
+- Rethinking Self-supervised Correspondence Learning: A Video Frame-level Similarity Perspective, ICCV 2021 **Oral**. [\[论文\]](https://arxiv.org/abs/2103.17263)[\[代码\]](https://github.com/xvjiarui/VFS)
+- Video Swin Transformer. [\[论文\]](https://arxiv.org/abs/2106.13230)[\[代码\]](https://github.com/SwinTransformer/Video-Swin-Transformer)
 
 更多详情可见 [相关工作](docs/projects.md)
 
