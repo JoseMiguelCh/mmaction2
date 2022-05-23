@@ -35,7 +35,7 @@ img_norm_cfg = dict(
 train_pipeline = [
     dict(type='DecordInit'),
     dict(type='SampleFrames', clip_len=8, frame_interval=32, num_clips=1),
-    dict(type='DecordDecode'),,
+    dict(type='DecordDecode'),
     dict(type='RandomRescale', scale_range=(256, 320)),
     dict(type='RandomCrop', size=224),
     dict(type='Flip', flip_ratio=0.5),
